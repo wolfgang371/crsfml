@@ -583,13 +583,6 @@ jobs:
           sleep 3
           Get-Process -Id $proc.Id
           kill $proc
-      - name: Run example "shader"
-        working-directory: ./examples
-        run: |
-          $proc = start shader.exe -NoNewWindow -PassThru
-          sleep 3
-          Get-Process -Id $proc.Id
-          kill $proc
       - name: Run example "shapes"
         working-directory: ./examples
         run: |
