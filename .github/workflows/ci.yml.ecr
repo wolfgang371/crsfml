@@ -16,7 +16,7 @@ on:
 <% matrix = [
   config.merge(os: ubuntu, os_ver: "22.04", sfml: "2.5.1", crystal: "nightly"),
   config.merge(os: ubuntu, os_ver: "22.04"),
-  config.merge(docker: "crystallang/crystal:0.28.0", os: ubuntu, os_ver: "16.04", sfml_pkg: true, sfml: "2.3.2", crystal: "0.28.0"),
+  config.merge(docker: "crystallang/crystal:1.5.1-build", os: ubuntu, os_ver: "22.04", sfml_pkg: true, sfml: "2.4.2", crystal: "1.5.1"),
   config.merge(os: mac, sfml: "2.5.1"),
   config.merge(os: mac, sfml: homebrew, crystal: homebrew, sfml_pkg: true),
   config.merge(os: windows, crystal: "nightly"),
