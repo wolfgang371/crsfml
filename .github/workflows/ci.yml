@@ -126,7 +126,7 @@ jobs:
         run: killall Xvfb
         if: always()
   job2:
-    name: 'Ubuntu 22.04: SFML 2.6.0, Crystal latest'
+    name: 'Ubuntu 22.04: SFML 2.6.1, Crystal latest'
     runs-on: ubuntu-22.04
     steps:
       - name: Download CrSFML source
@@ -135,7 +135,7 @@ jobs:
         id: sfml
         uses: oprypin/install-sfml@v1
         with:
-          sfml: 2.6.0
+          sfml: 2.6.1
       - name: Install Crystal
         uses: oprypin/install-crystal@v1
         with:
@@ -484,7 +484,7 @@ jobs:
           sleep 3
           kill $pid
   job6:
-    name: 'Windows: SFML 2.6.0, Crystal nightly'
+    name: 'Windows: SFML 2.6.1, Crystal nightly'
     runs-on: windows-latest
     steps:
       - name: Download CrSFML source
@@ -493,7 +493,7 @@ jobs:
         id: sfml
         uses: oprypin/install-sfml@v1
         with:
-          sfml: 2.6.0
+          sfml: 2.6.1
       - name: Install Crystal
         uses: oprypin/install-crystal@v1
         with:
