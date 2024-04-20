@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Download CrSFML source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install SFML
         id: sfml
         uses: oprypin/install-sfml@v1
@@ -130,7 +130,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Download CrSFML source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install SFML
         id: sfml
         uses: oprypin/install-sfml@v1
@@ -250,7 +250,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download CrSFML source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install SFML
         id: sfml
         uses: oprypin/install-sfml@v1
@@ -306,7 +306,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Download CrSFML source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install SFML
         id: sfml
         uses: oprypin/install-sfml@v1
@@ -398,7 +398,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Download CrSFML source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install SFML
         id: sfml
         uses: oprypin/install-sfml@v1
@@ -488,7 +488,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Download CrSFML source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install SFML
         id: sfml
         uses: oprypin/install-sfml@v1
