@@ -302,8 +302,8 @@ jobs:
         working-directory: ./examples
         run: crystal build echo.cr
   job4:
-    name: 'macOS: SFML 2.5.1, Crystal latest'
-    runs-on: macos-latest
+    name: 'macOS 13: SFML 2.5.1, Crystal latest'
+    runs-on: macos-13
     steps:
       - name: Download CrSFML source
         uses: actions/checkout@v4
@@ -394,8 +394,8 @@ jobs:
           sleep 3
           kill $pid
   job5:
-    name: 'macOS: SFML Homebrew, Crystal Homebrew'
-    runs-on: macos-latest
+    name: 'macOS 13: SFML Homebrew, Crystal Homebrew'
+    runs-on: macos-13
     steps:
       - name: Download CrSFML source
         uses: actions/checkout@v4
