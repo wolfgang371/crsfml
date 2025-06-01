@@ -3,10 +3,11 @@ require "../system/lib"
 {% unless flag?(:win32) %}
 @[Link("stdc++")]
 {% end %}
-@[Link("sfml-window")]
 {% if flag?(:win32) %}
+@[Link("sfml-window-s")]
 @[Link(ldflags: "\"#{__DIR__}\\ext.obj\"")]
 {% else %}
+@[Link("sfml-window")]
 @[Link(ldflags: "'#{__DIR__}/ext.o'")]
 {% end %}
 lib SFMLExt
